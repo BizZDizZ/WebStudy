@@ -1,0 +1,26 @@
+(일반적으로는 숫자부여, 유형별 중)
+
+bg = 배경
+bg_arrow (이미지 = img)
+
+pri - logo  = logo = 로고(header, footer)
+sec - logo = logo_footer
+
+border = 라인
+
+ci = 씨아이
+ico = 아이콘
+
+quote = 인용부호
+ex = dummyData(일회성 자료)
+
+ban = 배너
+
+bul = 불릿
+
+btn = 버튼
+
+abc_def_ = 대분류 중분류 파생시
+
+off
+on

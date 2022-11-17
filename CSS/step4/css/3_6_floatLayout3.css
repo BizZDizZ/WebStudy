@@ -1,0 +1,103 @@
+body{
+    margin: 0 auto; width: 960px;
+}
+header{
+    position: relative; background-color: skyblue;
+}
+header h1{
+    width: 200px; margin: 0 auto; background-color: #66f;
+    color: white; font-size: 20px; line-height: 40px; text-align: center;
+}
+header div{
+    position: absolute; right: 0; top: 28px;
+}
+header nav{
+    background-color: dodgerblue;
+}
+header nav ul{
+    margin: 0; padding: 0; list-style: none; text-align: center;
+}
+header nav ul li{
+    display: inline-block; line-height: 40px;
+}
+header nav ul li.marginLeft{
+    margin-left: 40px;
+}
+header nav ul li a{
+    text-decoration: none; color: black; display: block;
+}
+.wrap:after{
+    content: ''; display: block; clear: both;
+}
+.wrap img{
+    margin-bottom: 30px;
+}
+.wrap div{
+    width: 308px; float: left; border: 1px solid gray;
+}
+.wrap div.latest2,
+.wrap div.latest3{
+    margin-left: 15px;
+}
+.wrap div h3{
+    margin: 0px 0px 30px 0px; padding: 0;
+}
+.wrap div ul{
+    margin: 0; padding: 0; list-style: none;
+}
+footer{
+    background-color: seagreen; color: white;
+    line-height: 40px; text-align: center;
+}
+/* 내 풀이
+    margin: 0; padding: 0;
+}
+html, body{
+    width: 960px; height: 100%; margin: 0 auto;
+}
+header{
+    width: 960px;
+    background-color: aqua;
+}
+header h1{
+    width: 30%;
+    background-color: blueviolet;
+}
+header nav{
+    background-color: skyblue; list-style: none; line-height: 30px;
+}
+header h1,
+header nav ul{
+    text-align: center;
+}
+header nav ul li{
+    display: inline-block;
+}
+header nav ul li a{
+    display: block;
+}
+.wrap img{
+    margin-bottom: 30px;
+}
+.wrap .latest1,
+.wrap .latest2,
+.wrap .latest3{
+    border: 1px solid black;
+    float: left; width: 32%;
+}
+.wrap .latest2,
+.wrap .latest3{
+    margin-left: 1.6%;
+}
+.wrap h3{
+    margin-bottom: 15px;
+}
+.wrap div ul li{
+    list-style: none;
+}
+.wrap:after{
+    content: ''; display: block; clear: both;
+}
+footer{
+    color: white; background-color: blue; text-align: center; line-height: 40px;
+} */

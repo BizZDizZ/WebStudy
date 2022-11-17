@@ -1,0 +1,72 @@
+/* 
+    ? rem - browser default font size(16px)에 근거를 두고 산출하는 단위( 1rem = 16px ).
+    ? em - 자신을 포함한 자신의 부모로부터 가장 가까운 font size에 근거를 두고 산출하는 단위 
+    * ex>
+    * html - font-size: 14px;
+    *   div - font-size: 12px;
+    *       p - font-size: 1rem; margin-bottom : 1em = 14px;
+*/
+
+@media screen and (max-width:767px) and (orientation:landscape){
+    body{
+        background-color: mintcream; color: magenta; font-weight: bold;
+    }
+    h1{
+        font-size: 2rem; line-height: 3rem; text-align: right;
+    }
+    p{
+        font-size: 1rem; text-align: right; line-height: 1.5rem;
+    }
+}
+/*? mlbile - L*/
+
+@media screen and (max-width:767px) and (orientation:portrait){
+    body{
+        background-color: purple; color: brown; font-weight: bold;
+    }
+    h1{
+        font-size: 2rem; line-height: 3rem; text-align: right;
+    }
+    p{
+        font-size: 1rem; text-align: right; line-height: 1.5rem;
+    }
+}
+/*? mobile - P*/
+@media screen and (min-width:768px) and (max-width:1279px) and (orientation:landscape){
+    body{
+        background-color: red; color: yellow; font-weight: bold;
+    }
+    h1{
+        font-size: 2rem; line-height: 3rem; text-align: right;
+    }
+    p{
+        font-size: 1rem; text-align: right; line-height: 1.5rem;
+    }
+}
+/*? tablet - L*/
+
+@media screen and (min-width:768px) and (max-width:1279px) and (orientation:portrait){
+    body{
+        background-color: green; color: limegreen; font-weight: bold;
+    }
+    h1{
+        font-size: 2rem; line-height: 3rem; text-align: right;
+    }
+    p{
+        font-size: 1rem; text-align: right; line-height: 1.5rem;
+    }
+}
+/*? tablet - P*/
+
+@media screen and (min-width:1280px){
+    body{
+        background-color: blue; color: pink; font-weight: bold;
+    }
+    h1{
+        font-size: 2rem; line-height: 3rem;
+    }
+    p{
+        font-size: 1rem; line-height: 1.5rem;
+    }
+}
+/*? desktop*/

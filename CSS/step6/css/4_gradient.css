@@ -1,0 +1,22 @@
+.redG{    
+    /* background: #9b1f1f;
+    background: -moz-linear-gradient(-45deg, #9b1f1f 0%, #ea7e7e 100%);
+    background: -webkit-linear-gradient(-45deg, #9b1f1f 0%, #ea7e7e 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#9b1f1f', endColorstr = '#ea7e7e'); */
+    width: 300px;
+    background: linear-gradient(-45deg, #f30b0b 0%, #ffffff 100%); color: darkred;
+}
+
+.blueG{
+    background: linear-gradient(to right, #32fff8 0%, #7db9e8 100%); color: paleturquoise;
+}
+
+.greenG{
+    background: linear-gradient(to bottom, #32ff32 0%, #0c6305 100%); color: darkgreen;
+}
+
+.yellowG{
+    width: 500px; height: 500px; border-radius: 250px; line-height: 500px; text-align: center;
+    background: radial-gradient(ellipse at center, #d1d121 50%,#898508 100%);
+    color: #f1da36; text-shadow: 2px 4px 3px rgba(0,0,0,0.5);
+}

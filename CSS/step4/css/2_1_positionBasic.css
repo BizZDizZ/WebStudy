@@ -1,0 +1,9 @@
+.wrap{
+    width: 300px; height: 200px; background-color: #999; margin: 0 auto; position: relative; overflow-y: scroll;
+}
+.wrap div{
+    width: 150px; height: 150px; position: absolute; left: 10px; top: 10px; box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+.wrap .redBox{background-color: red; left: 10px; top: 10px; z-index: 100;}
+.wrap .greenBox{background-color: green; left: 50px; top: 50px; z-index: 10;}
+.wrap .blueBox{background-color: blue; left: 90px; top: 90px; z-index: 1;}

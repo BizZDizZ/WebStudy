@@ -1,0 +1,14 @@
+*{
+    margin: 0; padding: 0; overflow: hidden;
+}
+ul li{
+    width: 16.66%;
+    border: 1px soild black; box-sizing: border-box; 
+    float: left; display: block;
+}
+ul li figure img{
+    width: 100%;
+}
+ul li figure figcaption dl{
+    text-align: center; background-color: yellow;
+}

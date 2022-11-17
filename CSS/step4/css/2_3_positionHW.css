@@ -1,0 +1,63 @@
+html, body{
+    height: 100%;
+}
+body{
+    margin: 0; background-color: black;
+}
+header, footer{
+    width: 100%;
+}
+aside, article{
+    height: 80%;
+}
+aside, article, footer{
+    position: absolute;
+}
+header{
+    height: 20%; left: 0; top: 0; position: fixed;
+    background-color: red; color: white; z-index: 1000;
+}
+aside{
+    width: 20%; left: 0; top: 20%;
+    background-color: green;
+}
+article{
+    width: 70%; right: 0; top: 20%;
+    background-color: blue; color: white;
+}
+footer{
+    left: 0; top: 100%;
+    background-color: orange; text-align: center; line-height: 55px;
+}
+/* 내 풀이
+    margin: 0; padding: 0;
+}
+body{
+    width: 100%; height: 950px; overflow-y: scroll;
+    background-color: black;
+}
+header{
+    position: absolute;
+    width: 100%; height: 100px;
+    background-color: red; color: white;
+    box-sizing: border-box;
+}
+aside{
+    position: relative;
+    width: 20%; height: 800px; top: 100px;
+    background-color: green; color: white;
+    float: left;
+}
+article{
+    position: relative;
+    width: 70%; height: 800px; top: 100px;
+    background-color: blue; color: white;
+    float: right;
+}
+footer{
+    position: relative;
+    width: 100%; height: 50px; top: 100px;
+    text-align: center; font-weight: bold;
+    background-color: orange;
+    display: block; clear: both;
+} */

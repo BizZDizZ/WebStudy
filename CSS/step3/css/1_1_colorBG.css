@@ -1,0 +1,15 @@
+html, body{
+    height: 100%;
+}
+body,
+.wrap p{
+    margin: 0;
+}
+
+.wrap{
+    background-color: skyblue;
+    height: 100%;
+}
+.wrap p{
+    background-color: orange;
+}

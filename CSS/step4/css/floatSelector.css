@@ -1,0 +1,7 @@
+ul:after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+
+ul li{
+    float: left; display: block; line-height: 55px;
+}
