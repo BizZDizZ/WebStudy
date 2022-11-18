@@ -151,15 +151,18 @@ function Lotto(){
 function btnMouseEx(){
     var clickBtn = window.prompt("누르실 마우스 버튼을 입력하세요 (왼쪽,오른쪽,가운데)");
     // ? 선행조건 1개에 - 예외 1개. (if{}else{})
-    if(clickBtn=="오른쪽"){
-        document.write("오른쪽!");
-    }else if(clickBtn=="왼쪽"){
-        document.write("왼쪽!");
-    }else if(clickBtn=="가운데"){
-        document.write("가운데!");
+    // if(clickBtn=="오른쪽"){
+    //     document.write("오른쪽!");
+    // }else if(clickBtn=="왼쪽"){
+    //     document.write("왼쪽!");
+    // }else if(clickBtn=="가운데"){
+    //     document.write("가운데!");
+    // }else{
+    //     document.write("올바른값을 입력하세요.");
+    // }
+    if(clickBtn == "오른쪽" || clickBtn == "왼쪽" || clickBtn == "가운데"){
+        document.write(clickBtn + "!");
     }else{
-        document.write("올바른값을 입력하세요.");
+        document.write("올바른 값을 입력하세요.");
     }
 }
-
-//수정수정
