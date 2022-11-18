@@ -7,3 +7,13 @@
     전송(java,php...), DB데이터 출력하기.
 
 */
+function pwCheck(){
+    whild(true){
+        var value = window.prompt('password를 입력하세요.');
+        if(value == 1234){
+            alert('접속승인');
+        }else{
+            alert('잘못 입력하였습니다.');
+        }
+    }
+}
