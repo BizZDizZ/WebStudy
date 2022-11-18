@@ -61,6 +61,8 @@ function calculator(){
         case "/":
             alert(firstNumb + " / " + lastNumb + " = " + (firstNumb/lastNumb));
             break;
-    
+        default:
+            alert("올바른 연산자를 입력하세요");
+            break;
     }
 }
