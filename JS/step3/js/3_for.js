@@ -75,3 +75,87 @@ function arrayFor(){
         document.write((i+1) + '번째 내용 = ' + element + '<br>');
     }
 }
+// *case.5 역반복 배열
+function reverseFavorFruit(){
+    var array = ['딸기', '자두', '복숭아', '살구', '한라봉', '귤'];
+    for(var i = array.length - 1; i >= 0; i--){
+        document.write(array[i] + '<br>');
+    }
+}
+// *case.6 forContinue
+function forContinue(){
+    for(var i = 0; i < 10; i++){
+        continue; //? 위 조건이 참일지라도 continue가 있어서 continue이하 코드 무시
+        document.write(i+'<br>');
+    }
+    document.write('최종 i = ' + i + '<br>');
+}
+// *case.6-1 forContinue 활용
+function runContinue(){
+    var output = 0;
+    for(var i = 1; i <= 10; i++){
+        console.log("현재 i = " + i);
+        if(i % 2 == 1){
+            continue;//? 홀수 필터
+        }
+        output += i;
+        document.write(output + '<br>');
+    }
+}
+// *case.7 forbreak
+function forBreak(){
+    for(var i = 1; i <= 10; i++){
+        break;
+        document.write(i + '<br>');
+    }
+    document.write("최종 i = " + i + '<br>');
+}
+// *case.8 forBreak 활용
+function runBreak(){
+    for(var i = 0; true; i++){
+        alert(i + '번째 반복문');
+        if(!confirm('계속할래?')){
+            break;
+        }
+    }
+}
+//* login Process -> 5회이상 틀렸을때 -> 경고창 출력. 이후 매회 경고창출력(10회도달시까지)
+//* -> 차단.
+
+//! 다중 for
+// *case.9 반절 피라미드
+function halfPyramid(){
+    var star = '';
+    for(var i = 1; i <= 10; i++){
+        for(var j = 0; j < i; j++){
+            star += '*';
+        }
+        star += '<br>';
+    }
+    document.write(star);
+}
+//todo.1 역반절 피라미드
+function reverseHalfPyramid(){
+    var star = '';
+    for(var i = 10; i >= 1; i--){
+        for(var j = 1; j < i; j++){
+            star += '*';
+        }
+        star += '<br>';
+    }
+    document.write(star);
+}
+//todo. 피라미드
+function Pyramid(){
+    var star = '';
+    for(var i = 1; i <= 20; i+=2){
+        for(var j = 20; j >= i; j-=2){
+            star += '&nbsp';            
+        }
+        for(var k = 1; k <= i; k++){
+            star += '*';
+        }
+        star += '<br>';
+    }
+    document.write(star);
+}
