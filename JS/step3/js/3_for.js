@@ -148,14 +148,24 @@ function reverseHalfPyramid(){
 //todo. 피라미드
 function Pyramid(){
     var star = '';
-    for(var i = 1; i <= 20; i+=2){
-        for(var j = 20; j >= i; j-=2){
+    for(var i = 1; i <= 10; i++){
+        for(var j = 10; j >= i; j--){
             star += '&nbsp';            
         }
-        for(var k = 1; k <= i; k++){
+        for(var k = 1; k <= 2*i-1; k++){
             star += '*';
         }
         star += '<br>';
     }
     document.write(star);
+}
+function PyramidPlus(){
+    var n = 6;
+    for(var i = 1; i <= n; i++){
+        var s = '';
+        for(var j = 1; j <= 2*n-1; j++){
+            (j >= n+1-i && j <= n-1+i) ? s += '*' : s += ' ';
+        }
+        console.log(s);
+    }
 }
