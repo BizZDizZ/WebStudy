@@ -88,6 +88,114 @@ function infiniteSum(){
     }
     document.write("총 " + count + "번 실행함");
 }
-function pringGugudan(){
+function printGugudan(){
     //! 2단~9단까지 반복문으로 자동 출력되게 만들기
+    for(var i = 2; i <= 9; i++){
+        document.write(i + "단 출력");
+        for(var j = 1; i<= 9; j++){
+            document.write(i + "X" + j + "=" + (i*j), '<br>');
+        }
+        document.write('<br>');
+    }
 }
+// *case.8 다음 실행 구문으로 가동될 수 있는 계산기 만들기
+/*
+    //* 실행구문
+    document.write("1 결과 =" + calculator("+", 20, 10));
+    document.write("2 결과 =" + calculator("-", 20, 10));
+    document.write("3 결과 =" + calculator("*", 20, 10));
+    document.write("4 결과 =" + calculator("/", 20, 10));
+    document.write("5 결과 =" + calculator("%", 20, 10));
+    //* 결과 
+    결과 = 30
+    결과 = 10
+    결과 = 200
+    결과 = 2
+    결과 = 잘못된 연산자 입니다.
+*/
+function calculator(op,numb1,numb2){
+    var result = ''; //? 결과저장및 return Variable.
+    switch(op){
+        case "+":
+            result = numb1 + numb2;
+            break;
+        case "-":
+            result = numb1 - numb2;
+            break;
+        case "*":
+            result = numb1 * numb2;
+            break;
+        case "/":
+            result = numb1 / numb2;
+            break;
+        default:
+            result = "잘못된 연산자 입니다.";
+            break;
+    }
+    return result;
+}
+// todo. 위의 예제에 추가로 사칙연산부를 함수로 변환하여 보다 편하게 사용 할 수 있게 만들기.
+/*
+//* 실행구문
+* document.write(calculator2("+", 20, 10) + "<br>");
+* document.write(add(20, 10) + "<br>");
+* document.write(sub(20, 10) + "<br>");
+* document.write(mul(20, 10) + "<br>");
+* document.write(div(20, 10) + "<br>");
+*/
+function calculator2(op,numb1,numb2){
+    var result = ''; //? 결과저장및 return Variable.
+    switch(op){
+        case "+":
+            result = add(numb1,numb2);
+            break;
+        case "-":
+            result = sub(numb1,numb2);
+            break;
+        case "*":
+            result = mul(numb1,numb2);
+            break;
+        case "/":
+            result = div(numb1,numb2);
+            break;
+        default:
+            result = "잘못된 연산자 입니다.";
+            break;
+    }
+    return result;
+}
+function add(numb1,numb2){
+    return numb1 + numb2; // ? + , 단독수행가능(처리,출력)
+}
+function sub(numb1,numb2){
+    return numb1 - numb2; // ? -, 단독수행가능(처리,출력)
+}
+function mul(numb1,numb2){
+    return numb1 * numb2;// ? *, 단독수행가능(처리,출력)
+}
+function div(numb1,numb2){
+    return numb1 / numb2;// ? /, 단독수행가능(처리,출력)
+}
+
+// *case. 9 함수를 변수에 담기.
+function hello(name){
+    console.log(name + "환영합니다.");
+}
+var func = hello;
+// *case. 10 좋아, 매개변수 값으로 함수 전달은 되냐?
+function hi1(){
+    console.log('Hello.');
+}
+function hi2(){
+    console.log('안녕하소.');
+}
+function execute(func){ //? 매개변수 func 생성.
+    func();
+}
+// *case.11 button Click시 매개변수값으로 넘긴 함수 실행하기.
+function welcome(){
+    alert("환영! 반갑.");
+}
+$(document).ready(function(){
+    $("#runEx11").click(welcome);
+});
