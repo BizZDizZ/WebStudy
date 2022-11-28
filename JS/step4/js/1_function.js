@@ -199,3 +199,31 @@ function welcome(){
 $(document).ready(function(){
     $("#runEx11").click(welcome);
 });
+// *case.12 1초마다 매개변수 값으로 넘겨진 익명함수 실행
+function loopStart(){
+    setInterval(function(){
+        document.write("hi<br>");
+    },1000);
+}
+// *case.12-1
+function callFunctionTenTimes(otherFunction){
+    for(var i = 0; i < 10; i++){
+        otherFunction();
+    }
+}
+// callFunctionTenTimes(function(){
+//     document.write('hellO!');
+// });
+function justFunction(){
+    document.write('hello', '<br>');
+}
+
+// *case. 13 returnValue 로 함수 사용.
+function createHello(){
+    function hello(user){
+        document.write(user + 'welcome!');
+    }
+    return hello;
+}
+var result = createHello();
+result("Mark");
