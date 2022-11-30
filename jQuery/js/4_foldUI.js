@@ -33,28 +33,28 @@ function imgAlignMix(){
         var imgLength = img.length;
         var imgWidth = img.width();
         var imgHeight = img.height();
-
-        // for(var i = 0; i < 3; i++){
-        //     for(var j = 0; j < 3; j++){
-        //         var image = img.eq(3*i+j);
-        //         xpos = j * imgWidth;
-        //         ypos = i * imgHeight;
-        //         image.css({
-        //             "left" : xpos,
-        //             "top" : ypos
-        //         })
-        //     }
-        // }
-        for(var i = 0; i< imgLength; i++){
+        console.log(imgLength, imgWidth, imgHeight);
+        for(var i = 0; i < imgLength; i++){
             var image = img.eq(i);
-            xpos = (i%3)*imgHeight;
+            xpos = (i%3)*imgWidth;
             ypos = parseInt(i/3)*imgHeight;
             image.css({
                 "left" : xpos,
                 "top" : ypos
-            })
+            });
         }
     });
+    // for(var i = 0; i < 3; i++){
+    //     for(var j = 0; j < 3; j++){
+    //         var image = img.eq(3*i+j);
+    //         xpos = j * imgWidth;
+    //         ypos = i * imgHeight;
+    //         image.css({
+    //             "left" : xpos,
+    //             "top" : ypos
+    //         })
+    //     }
+    // }
     $(".resetMix").click(function(){
         img.css({
             "left" : 0,
